@@ -1,0 +1,4 @@
+dump.sql
+dump.sh
+node_modules
+.env

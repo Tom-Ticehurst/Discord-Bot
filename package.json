@@ -1,0 +1,26 @@
+{
+  "name": "hydrogen_services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon --ignore \"/*.json\"",
+    "start": "pm2 start . --name 'hydrogen services'",
+    "restart": "pm2 restart 'hydrogen services'",
+    "log": "pm2 log 'hydrogen services' --lines 50",
+    "stop": "pm2 delete 'hydrogen services'",
+    "restartlog": "npm run restart && npm run log"
+  },
+  "keywords": [],
+  "author": "Tom Ticehurst <tticehurst@jtsr.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "mysql2": "^2.2.5",
+    "rgb-hex": "^3.0.0",
+    "title-case": "^3.0.3",
+    "yahoo-finance2": "^1.10.4"
+  }
+}
